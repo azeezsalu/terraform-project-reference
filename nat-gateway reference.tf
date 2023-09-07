@@ -1,7 +1,7 @@
 # allocate elastic ip. this eip will be used for the nat-gateway in the public subnet az1 
 # terraform aws allocate elastic ip
 resource "aws_eip" "eip_for_nat_gateway_az1" {
-  domain    = 
+  domain    = "vpc" # update, this is the correct code.
 
   tags   = {
     Name = 
@@ -11,7 +11,7 @@ resource "aws_eip" "eip_for_nat_gateway_az1" {
 # allocate elastic ip. this eip will be used for the nat-gateway in the public subnet az2
 # terraform aws allocate elastic ip
 resource "aws_eip" "eip_for_nat_gateway_az2" {
-  domain    = 
+  domain    = "vpc" # update, this is the correct code.
 
   tags   = {
     Name = 
